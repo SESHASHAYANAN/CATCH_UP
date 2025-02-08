@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "react": "canary",
+    "react-dom": "canary",
+    "react-scripts": "^5.0.0",
+    "react-leaflet": "5.0.0",
+    "leaflet": "1.9.4",
+    "haversine": "1.1.1"
+  },
+  "main": "/index.js",
+  "devDependencies": {}
+}
