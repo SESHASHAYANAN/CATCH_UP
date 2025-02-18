@@ -1,135 +1,166 @@
-    <h1>🌍 Catch Up</h1>
-    
-    <p>Catch Up is a location-based social discovery application that helps users find nearby places and see where their friends are hanging out in real-time.</p>
+# 🌍 Catch Up
 
-    <h2>Features</h2>
-    <ul>
-        <li>Location-based place discovery</li>
-        <li>Interactive map with place markers</li>
-        <li>Real-time friend check-ins</li>
-        <li>Personalized place recommendations</li>
-        <li>Detailed place information including ratings and distance</li>
-        <li>Integration with Foursquare API for accurate place data</li>
-        <li>AI-powered recommendations using Google's Gemini API</li>
-    </ul>
+A location-based social discovery application that helps users find nearby places and see where their friends are hanging out in real-time.
 
-    <h2>Tech Stack</h2>
-    <ul>
-        <li>React.js - Frontend framework</li>
-        <li>React Leaflet - Map integration</li>
-        <li>Foursquare API - Places data</li>
-        <li>Google Gemini API - AI recommendations</li>
-        <li>Wikimedia API - Place images</li>
-        <li>Haversine formula - Distance calculations</li>
-    </ul>
+## ✨ Features
 
-    <h2>Prerequisites</h2>
-    <ul>
-        <li>Node.js (v14 or higher)</li>
-        <li>NPM or Yarn package manager</li>
-        <li>Foursquare API key</li>
-        <li>Google Gemini API key</li>
-    </ul>
+- 🗺️ Location-based place discovery with interactive map
+- 👥 Real-time friend check-ins and social features
+- 🎯 Personalized place recommendations using AI
+- ⭐ Detailed place information with ratings and distance
+- 📍 Integration with Foursquare API for accurate place data
+- 🤖 AI-powered recommendations using Google's Gemini API
+- 🖼️ Place images from Wikimedia Commons
 
-    <h2>Installation</h2>
-    <ol>
-        <li>Clone the repository:
-            <pre>git clone https://github.com/yourusername/catch-up.git</pre>
-        </li>
-        <li>Navigate to the project directory:
-            <pre>cd catch-up</pre>
-        </li>
-        <li>Install dependencies:
-            <pre>npm install</pre>
-        </li>
-        <li>Create a .env file in the root directory and add your API keys:
-            <pre>
+## 🚀 Tech Stack
+
+- React.js
+- React Leaflet
+- Foursquare Places API
+- Google Gemini API
+- Wikimedia API
+- Haversine formula for distance calculations
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14 or higher)
+- NPM or Yarn package manager
+- Foursquare API key
+- Google Gemini API key
+
+## 💻 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/catch-up.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd catch-up
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Create a `.env` file in the root directory and add your API keys:
+```env
 REACT_APP_FOURSQUARE_API_KEY=your_foursquare_key
 REACT_APP_GEMINI_API_KEY=your_gemini_key
-            </pre>
-        </li>
-        <li>Start the development server:
-            <pre>npm start</pre>
-        </li>
-    </ol>
+```
 
-    <h2>User Guide</h2>
-    <h3>Getting Started</h3>
-    <ol>
-        <li>Enter a location in the search bar at the top of the page</li>
-        <li>Click "Explore" to see nearby places</li>
-        <li>The map will center on your chosen location and display markers for nearby places</li>
-        <li>Scroll through the place cards below the map to see detailed information</li>
-    </ol>
+5. Start the development server:
+```bash
+npm start
+```
 
-    <h3>Exploring Places</h3>
-    <ol>
-        <li>Click on any card or map marker to view detailed information about a place</li>
-        <li>View basic information like:
-            <ul>
-                <li>Place name and category</li>
-                <li>Rating and distance</li>
-                <li>Address and contact information</li>
-                <li>Operating hours</li>
-            </ul>
-        </li>
-        <li>See which friends are currently checked in at each location</li>
-        <li>Get personalized recommendations by clicking "Get Personalized Recommendation"</li>
-    </ol>
+## 📱 Usage
 
-    <h3>Getting Personalized Recommendations</h3>
-    <ol>
-        <li>Click "Get Personalized Recommendation" on any place's detail view</li>
-        <li>Answer questions about your preferences:
-            <ul>
-                <li>Preferred cuisine type</li>
-                <li>Desired atmosphere</li>
-                <li>Price range</li>
-            </ul>
-        </li>
-        <li>Receive AI-powered recommendations based on your preferences</li>
-    </ol>
+### Basic Navigation
+1. Enter any location in the search bar
+2. Click "Explore" to discover nearby places
+3. View places on the interactive map and in the card list below
+4. Click on markers or cards to view detailed information
 
-    <h2>API Integration</h2>
-    <h3>Foursquare API</h3>
-    <p>Used for fetching nearby places with the following information:</p>
-    <ul>
-        <li>Place names and categories</li>
-        <li>Locations and coordinates</li>
-        <li>Ratings and reviews</li>
-        <li>Contact information and operating hours</li>
-    </ul>
+### Place Details
+- View basic information (name, category, rating, distance)
+- See address and contact details
+- Check operating hours
+- View friends currently at the location
+- Get AI-powered personalized recommendations
 
-    <h3>Google Gemini API</h3>
-    <p>Provides personalized place recommendations based on:</p>
-    <ul>
-        <li>User preferences</li>
-        <li>Place characteristics</li>
-        <li>Historical user behavior</li>
-    </ul>
+### Personalized Recommendations
+1. Click "Get Personalized Recommendation" on any place
+2. Answer preference questions about:
+   - Cuisine type
+   - Atmosphere
+   - Price range
+3. Receive tailored recommendations based on your preferences
 
-    <h2>Contributing</h2>
-    <ol>
-        <li>Fork the repository</li>
-        <li>Create a new branch:
-            <pre>git checkout -b feature/your-feature-name</pre>
-        </li>
-        <li>Make your changes and commit them:
-            <pre>git commit -m 'Add some feature'</pre>
-        </li>
-        <li>Push to the branch:
-            <pre>git push origin feature/your-feature-name</pre>
-        </li>
-        <li>Submit a pull request</li>
-    </ol>
+## 🔌 API Integration
 
-    <h2>License</h2>
-    <p>This project is licensed under the MIT License - see the LICENSE.md file for details</p>
+### Foursquare API
+Used to fetch nearby places with:
+- Place names and categories
+- Locations and coordinates
+- Ratings and reviews
+- Contact information
+- Operating hours
 
-    <h2>Acknowledgments</h2>
-    <ul>
-        <li>Foursquare API for place data</li>
-        <li>Google Gemini for AI recommendations</li>
-        <li>Wikimedia Commons for place images</li>
-        <li>OpenStreetMap contributors for map data</li>
-    </ul>
+### Google Gemini API
+Provides personalized recommendations based on:
+- User preferences
+- Place characteristics
+- Historical behavior
+
+## 📦 Project Structure
+
+```
+src/
+  ├── App.js              # Main application component
+  ├── styles.css          # Application styles
+  ├── components/         # React components
+  ├── services/          # API integration services
+  ├── utils/             # Helper functions
+  └── assets/            # Static assets
+```
+
+## 🔧 Configuration
+
+The application uses the following environment variables:
+
+```env
+REACT_APP_FOURSQUARE_API_KEY - Foursquare Places API key
+REACT_APP_GEMINI_API_KEY - Google Gemini API key
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch:
+```bash
+git checkout -b feature/AmazingFeature
+```
+3. Commit your changes:
+```bash
+git commit -m 'Add some AmazingFeature'
+```
+4. Push to the branch:
+```bash
+git push origin feature/AmazingFeature
+```
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## 👏 Acknowledgments
+
+- Foursquare API for place data
+- Google Gemini for AI recommendations
+- Wikimedia Commons for place images
+- OpenStreetMap contributors for map data
+
+## 🐛 Known Issues
+
+- Image loading may be slow in areas with limited Wikimedia Commons coverage
+- Friend check-in data is currently mocked for demonstration purposes
+
+## 🔮 Future Enhancements
+
+- Real-time friend location updates
+- User authentication and profiles
+- Favorite places and personalized lists
+- Social sharing features
+- Advanced filtering options
+- Mobile app version
+
+## 📞 Support
+
+For support, email support@catchup.com or join our Slack channel.
+
